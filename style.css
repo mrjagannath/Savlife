@@ -1,0 +1,168 @@
+/* Reset and base */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9fafb;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+main {
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  flex-grow: 1;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 12px;
+  font-weight: 700;
+  padding-bottom: 6px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.contact-section {
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  padding: 25px 20px;
+  margin-top: 40px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.15);
+}
+
+.contact-section h2 {
+  color: #0056b3;
+  margin-bottom: 15px;
+  font-weight: 700;
+  border-bottom: 3px solid #0056b3;
+  padding-bottom: 8px;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.contact-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-item {
+  flex: 1 1 250px;
+}
+
+.contact-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #003d7a;
+}
+
+.contact-item a {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* मोबाइल के लिए */
+@media (max-width: 600px) {
+  .contact-methods {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive typography adjustments */
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px 15px;
+  }
+
+  header {
+    font-size: 1.3rem;
+    padding: 12px 15px;
+  }
+
+  main {
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Contact section styling */
+main > p:last-of-type,
+main > p:nth-last-of-type(2) {
+  font-weight: 600;
+}
